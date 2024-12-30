@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf7f7;
+}
+
+/* Hover des h2  */
+
+h2:hover {
+    color: #e06c7a;
+    /* text-shadow: 1px 1px 3px rgba(56, 55, 55, 0.762); */
+    text-shadow: 1px 8px 10px rgb(172, 223, 120) 
+}
+
+/* Nav bar avec menu */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(255, 192, 203), #faf7f7);
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-title-website {
+    font-family: "Agbalumo", system-ui;
+    font-size: 2rem;
+}
+
+.main-title-website:hover {
+    color: #e06c7a;
+}
+
+.navbar .logo a {
+    color: #2c2929;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #2c2929;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #e06c7a;
+}
+
+
+/* Image pleine section à la place du slideshow */
+
+.slider-homepage  {
+background-image: url(./assets/patisserie-longformat/macarons-longformat.png);
+padding: 300px;
+background-position: center;
+background-size: cover;
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
+/* Section Best sellers */
+
+.best-sellers {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.best-sellers-header h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.best-sellers-header p {
+    margin-bottom: 10px;
+}
+
+.best-sellers-products {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.product img {
+    width: 350px;
+}
+
+.product h3 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+.product p {
+    font-size: 0.9rem;
+    color:#2c2929
+}
+
+/* All menu */
+
+/* section conteneur */
+.all-menu-section {
+    margin: 20px 0;
+}
+
+/* Barre noire  */
+
+.all-menu-bar {
+    background-color: #2c2929;
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-menu-button {
+    background: white;
+    border: solid 2px #2c2929;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Gallerie 6 photos et fond coloré */
+
+/* https://www.youtube.com/watch?v=sHG3Sf6XN9g */
+
+.gallery {
+    position: relative; /* Crée un contexte d'empilement pour les enfants */
+    padding: 20px;
+  }
+  
+  .gallery-background {
+    position: absolute; /* Permet de superposer l'élément */
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 60%;
+    background-color: rgba(255, 200, 200, 
+    0.5); /* Couleur de fond avec transparence */
+    z-index: 1; /* Niveau le plus bas */
+
+    /* left: 50% : Cela place le point de référence gauche du rectangle au milieu du conteneur parent.
+transform: translateX(-50%) : Cela déplace le rectangle vers la gauche de la moitié de sa largeur, ce qui le centre parfaitement. */
+    
+  }
+
+  .gallery-background:hover {
+    background-color: #e06c7a;
+  }
+  
+  .gallery-grid {
+    position: relative; /* Nécessaire pour que les images soient au-dessus du fond */
+    z-index: 2; /* Place les images au-dessus du fond */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 80%;
+    margin: 100px auto 50px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+
+/* Section More (delivery) */
+
+.more-section {
+    margin: 50px 0;
+    padding: 20px;
+
+}
+
+.more-content { 
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Espace équilibré entre les blocs */
+    align-items: center; /* Centrer les blocs verticalement */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    /* gap: 20px; */
+}
+
+/* Alignement et espacement du titre */
+.more-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-header h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Style des blocs (picto + texte) */
+.picto {
+    display: flex;
+    flex-direction: column; /* Icône au-dessus, texte en dessous */
+    align-items: center; /* Centrer les éléments horizontalement */
+    text-align: center;
+    gap: 10px; /* Espacement entre l'icône et le texte */
+    width: 200px; /* Largeur fixe pour chaque bloc */
+}
+
+.picto i {
+    font-size: 4rem;
+    color: #2c2929;
+}
+
+.picto p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#bloc-1, #bloc-3 {
+    background-color: #e06c7a;
+    padding: 30px;
+    border-radius: 6px;
+    
+}
+
+#bloc-2 {
+    background-color: rgb(172, 223, 120) ;
+    padding: 30px;
+    border-radius: 6px;
+   
+}
+
+.line {
+    background-color: #2c2929;
+    height: 250px;
+    width: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#line-1 {
+    right: -100px; 
+    margin-right: 200px;
+    
+}
+
+#line-2 {
+    left: -100px; 
+    margin-left: 200px;
+   
+}
+
+/* Footer  */
+
+.section-footer {
+    background-color: #e06c7a;
+    padding: 30px 30px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-container > div {
+    flex: 1; /* Largeur égale pour chaque colonne */
+    min-width: 200px; /* Assure une largeur minimale */
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #2c2929;
+}
+
+.shop a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #faf7f7;
+    font-weight: 600;
+}
+
+.shop a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.opening-hours p,  .addresses p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #2c2929;
+    font-weight: bold;
+}
+
+/* Formulaire du footer  */
+
+.form {
+    display: flex;
+    flex-direction: column; /* Pour empiler les éléments */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+}
+
+.form input {
+    width: 100%;
+    max-width: 250px; /* Largeur maximale */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Ne fonctionne pas, voir comment cibler
+.form input:focus {
+    border: none;
+} */
+
+.form button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #faf7f7;
+    color:#2c2929;
+    /* border: none; */
+    border: solid 2px #2c2929;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background-color:rgb(172, 223, 120);
+    color: #2c2929;
+    border: solid 2px #2c2929;
+    box-shadow: -4px 7px 0px 0px #2c2929;
+    
+}

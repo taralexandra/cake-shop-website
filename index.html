@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-- Font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>The cake shop index</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+      <div class="logo">
+        <!-- <a href="#home" class="main-title-website">The Cake Shop</a> -->
+        <h1 class="main-title-website">The Cake Shop</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#apropos">À Propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Construire ici sections header Homemade Sweets  -->
+    <div class="slider-homepage"></div>
+
+    <!-- Section Best Sellers 3 div  -->
+    <div class="best-sellers">
+      <div class="best-sellers-header">
+        <h2>Les Best Sellers</h2>
+        <p>Les produits que vous aimez.</p>
+      </div>
+
+      <!-- image / nom du produit h3 / prix-->
+      <div class="best-sellers-products">
+        <!-- Pdt 1 -->
+        <div class="product">
+          <img
+            src="./assets/patisseries-square-format/1.png"
+            alt="betseller-1"
+          />
+          <h3>Macaron Pink it up</h3>
+          <p>1 €</p>
+        </div>
+
+        <!-- image / nom du produit h3 / prix-->
+        <!-- Pdt 2 -->
+        <div class="product">
+          <img
+            src="./assets/patisseries-square-format/2.png"
+            alt="betseller-2"
+          />
+          <h3>Cupcake Vanilla Delight</h3>
+          <p>3 €</p>
+        </div>
+
+        <!-- image / nom du produit h3 / prix-->
+        <!-- Pdt 3 -->
+        <div class="product">
+          <img
+            src="./assets/patisseries-square-format/3.png"
+            alt="betseller-3"
+          />
+          <h3>Donut Faise Lovely</h3>
+          <p>2 €</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section all menu  -->
+    <section class="all-menu-section">
+      <div class="all-menu-bar">
+        <button class="all-menu-button">Le menu</button>
+      </div>
+    </section>
+    <!-- section galerie -->
+    <section class="gallery">
+      <div class="gallery-background"></div>
+      <div class="gallery-grid">
+        <img src="./assets/patisseries-square-format/1.png" alt="image-1" />
+        <img src="./assets/patisseries-square-format/2.png" alt="image-2" />
+        <img src="./assets/patisseries-square-format/3.png" alt="image-3" />
+        <img src="./assets/patisseries-square-format/4.png" alt="image-4" />
+        <img src="./assets/patisseries-square-format/5.png" alt="image-5" />
+        <img src="./assets/patisseries-square-format/6.png" alt="image-6" />
+        <img src="./assets/patisseries-square-format/2.png" alt="image-7" />
+        <img src="./assets/patisseries-square-format/1.png" alt="image-8" />
+      </div>
+    </section>
+
+    <!-- section more  -->
+    <section>
+      <div class="more-section">
+        <div class="more-header">
+          <h2>Plus d'avantages</h2>
+        </div>
+
+        <div class="more-content">
+          <div class="picto" id="bloc-1">
+            <i class="fa-solid fa-shop"></i>
+            <p>Nos boutiques</p>
+          </div>
+
+          <!-- Barre gauche -->
+          <div class="line" id="line-1"></div>
+
+          <div class="picto" id="bloc-2">
+            <i class="fa-solid fa-truck"></i>
+            <p>Livraison rapide</p>
+          </div>
+
+          <!-- Barre droite -->
+          <div class="line" id="line-2"></div>
+
+          <div class="picto" id="bloc-3">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Service de Click&Collect</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer rose et formulaire  -->
+    <div class="section-footer">
+      <div class="footer-container">
+        <div class="shop">
+          <h3>Notre eBoutique</h3>
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Store Policy</a>
+        </div>
+
+        <div class="opening-hours">
+          <h3>Nos Horaires</h3>
+          <p>Lundi-Vendredi de 9h à 17h30</p>
+          <p>Samedi 10h à 13h30</p>
+          <p>Fermé le dimanche</p>
+        </div>
+
+        <div class="addresses">
+          <h3>Nos adresses</h3>
+          <p>Saint-Raphaël - 17 Rue des délices</p>
+          <p>Fréjus - 8 Boulevard de la Mer</p>
+          <p>Cannes - 132 Place du bonheur</p>
+        </div>
+
+        <div class="form">
+          <h3>Newsletter</h3>
+          <form action="#" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Entrez votre mail"
+              required
+            />
+            <button type="submit">Souscrire</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
