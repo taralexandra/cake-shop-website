@@ -6,7 +6,7 @@ My goal here was to make my first HTML & CSS project by my own, using a picture 
 
 [Link to the image on Pinterest](https://fr.pinterest.com/wordpresswebdesign0784/woocommerce-website-designs/)
 
-The image is also available in this repository.
+The image is also available in this repository => [Link to the image i saved](https://github.com/taralexandra/cake-shop-website/blob/main/screen-pinterest-cake-shop.png)
 
 ## My process here :
 
